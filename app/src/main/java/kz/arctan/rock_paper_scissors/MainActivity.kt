@@ -39,9 +39,7 @@ class MainActivity : AppCompatActivity() {
         rockButton.setOnClickListener { play(0) }
         paperButton.setOnClickListener { play(1) }
         scissorsButton.setOnClickListener { play(2) }
-        restartButton.setOnClickListener {
-            restart()
-        }
+        restartButton.setOnClickListener { restart() }
     }
 
     private fun play(choice: Int) {
@@ -73,14 +71,13 @@ class MainActivity : AppCompatActivity() {
             .setTitle("End game")
             .setPositiveButton("Yes") { _, _ -> restart() }
             .setNegativeButton("No") { dialog, _ -> dialog.cancel() }
-        if (hasWon)
-            alertDialogBuilder.setMessage("You won. Start again?")
-        else
-            alertDialogBuilder.setMessage("You lost. Start again?")
+        if (hasWon) alertDialogBuilder.setMessage("You won. Start again?")
+        else alertDialogBuilder.setMessage("You lost. Start again?")
         alertDialogBuilder.show()
     }
 
     private fun restart() {
+        enemyChoiceImageView.setImageResource(R.drawable.unknown)
         rockButton.isEnabled = true
         paperButton.isEnabled = true
         scissorsButton.isEnabled = true

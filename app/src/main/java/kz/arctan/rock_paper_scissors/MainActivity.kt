@@ -1,6 +1,5 @@
 package kz.arctan.rock_paper_scissors
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View

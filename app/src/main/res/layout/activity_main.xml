@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Make a choice!"
+            android:text="@string/make_a_choice"
             android:textColor="#000" />
 
         <ImageButton
@@ -101,7 +101,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="Enemy's choice:"
+            android:text="@string/enemy_s_choice"
             android:textColor="#000" />
 
         <ImageView

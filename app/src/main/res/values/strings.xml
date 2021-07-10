@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rock-Paper-Scissors</string>
+    <string name="dragon">dragon</string>
+    <string name="knight">knight</string>
+    <string name="play">Play</string>
+    <string name="rock">rock</string>
+    <string name="scissors">scissors</string>
+    <string name="unknown">unknown</string>
+    <string name="paper">paper</string>
+    <string name="initial_health">100</string>
+    <string name="restart">Restart</string>
+</resources>
